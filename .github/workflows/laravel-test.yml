@@ -1,0 +1,27 @@
+name: Send Email on Push to Test Branch
+
+on:
+  push:
+    branches:
+      - test
+
+jobs:
+  send_email:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Send Email
+        uses: dawidd6/action-send-mail@v3
+        with:
+          server_address: mail.dziecinnieproste.com.pl  # Adres SMTP (np. Gmail, Outlook, etc.)
+          server_port: 465  # Port SMTP (587 dla TLS, 465 dla SSL)
+          username: julkak@dziecinnieproste.com.pl  # Nazwa użytkownika SMTP
+          password: Julka123!Netmark  # Hasło lub App Password (nie wstawiaj tu jawnie!)
+          subject: "🚀 Nowy push do test branch!"
+          to: "mardok1990@gmail.com"  # Adres e-mail odbiorcy
+          from: "JulkaK <julkak@dziecinnieproste.com.pl>"
+          body: "Nowy push do test branch!\n\nCommit: ${{ github.event.head_commit.message }}\nAutor: ${{ github.actor }}"
+          content_type: text/plain

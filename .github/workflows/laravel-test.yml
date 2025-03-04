@@ -21,7 +21,7 @@ jobs:
           username: julkak@rewskidomek.pl  # Nazwa użytkownika SMTP
           password: Julka123!Netmark  # Hasło lub App Password (nie wstawiaj tu jawnie!)
           subject: "🚀 Nowy push do test branch!"
-          to: "mardok1990@gmail.com"  # Adres e-mail odbiorcy
+          to: "kleinszmidtj@gmail.com"  # Adres e-mail odbiorcy
           from: "JulkaK <julkak@rewskidomek.pl>"
           body: |
             Nowy push do test branch!

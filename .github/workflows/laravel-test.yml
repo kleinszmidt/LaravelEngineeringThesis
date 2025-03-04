@@ -16,12 +16,12 @@ jobs:
       - name: Send Email
         uses: dawidd6/action-send-mail@v3
         with:
-          server_address: mail.rewskidomek.pl  # Adres SMTP (np. Gmail, Outlook, etc.)
+          server_address: mail.rewskidomek.pl  
           server_port: 465  # Port SMTP (587 dla TLS, 465 dla SSL)
-          username: julkak@rewskidomek.pl  # Nazwa użytkownika SMTP
-          password: Julka123!Netmark  # Hasło lub App Password (nie wstawiaj tu jawnie!)
+          username: julkak@rewskidomek.pl  
+          password: Julka123!Netmark  
           subject: "🚀 Nowy push do test branch!"
-          to: "kleinszmidtj@gmail.com"  # Adres e-mail odbiorcy
+          to: "kleinszmidtj@gmail.com"  
           from: "JulkaK <julkak@rewskidomek.pl>"
           body: |
             Nowy push do test branch!

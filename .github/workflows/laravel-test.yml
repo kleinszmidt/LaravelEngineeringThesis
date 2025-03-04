@@ -16,13 +16,13 @@ jobs:
       - name: Send Email
         uses: dawidd6/action-send-mail@v3
         with:
-          server_address: mail.dziecinnieproste.com.pl  # Adres SMTP (np. Gmail, Outlook, etc.)
+          server_address: mail.rewskidomek.pl  # Adres SMTP (np. Gmail, Outlook, etc.)
           server_port: 465  # Port SMTP (587 dla TLS, 465 dla SSL)
-          username: julkak@dziecinnieproste.com.pl  # Nazwa użytkownika SMTP
+          username: julkak@rewskidomek.pl  # Nazwa użytkownika SMTP
           password: Julka123!Netmark  # Hasło lub App Password (nie wstawiaj tu jawnie!)
           subject: "🚀 Nowy push do test branch!"
           to: "mardok1990@gmail.com"  # Adres e-mail odbiorcy
-          from: "JulkaK <julkak@dziecinnieproste.com.pl>"
+          from: "JulkaK <julkak@rewskidomek.pl>"
           body: |
             Nowy push do test branch!
 

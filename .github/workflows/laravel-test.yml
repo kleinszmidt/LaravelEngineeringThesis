@@ -21,7 +21,7 @@ jobs:
           username: test@gieldagolebi.pl
           password: p2J8VWwQPy9jraa
           subject: "🚀 Nowy push do test branch!"
-          to: "mardok1990@gmail.com"  
+          to: "kleinszmidtj@gmail.com"  
           from: "JulkaK <test@gieldagolebi.pl>"
           body: |
             Nowy push do test branch!

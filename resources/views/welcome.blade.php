@@ -22,12 +22,15 @@
         <div class="row mb-4">
             <div class="col text-center">
                 <h1>Witaj w Laravelu!</h1>
-                <p>Przykładowa strona.</p>
+                <p>Przykładowa strona stworzona z użyciem Blade i Bootstrap.</p>
             </div>
         </div>
-        <!-- Przykładowe przyciski -->
-        <div class="row justify-content-center">
-            <div class="col-md-8 d-flex flex-column align-items-center">
+        <!-- Główna zawartość -->
+        <div class="row">
+            <div class="col-md-6">
+                <img src="https://cdn.pixabay.com/photo/2023/11/17/16/54/boat-8394639_1280.jpg" alt="Przykładowy obrazek" class="img-fluid rounded">
+            </div>
+            <div class="col-md-6 d-flex flex-column justify-content-center">
                 <button class="btn btn-primary custom-button" onclick="alert('Przycisk 1 został kliknięty!')">Przycisk 1</button>
                 <button class="btn btn-success custom-button" onclick="alert('Przycisk 2 został kliknięty!')">Przycisk 2</button>
                 <button class="btn btn-danger custom-button" onclick="alert('Przycisk 3 został kliknięty!')">Przycisk 3</button>
